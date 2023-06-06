@@ -1,0 +1,13 @@
+GET http://localhost:4004/catalog
+###
+GET http://localhost:4004/catalog/$metadata
+###
+GET http://localhost:4004/catalog/Sales
+###
+POST http://localhost:4004/catalog/Sales(1)
+Content-Type: application/json
+
+{}
+###
+GET http://localhost:4004/catalog/topSales(amount=700)
+###
